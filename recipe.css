@@ -38,20 +38,15 @@ body{
 
 h1{
     color: hsl(24, 5%, 18%);
+    font-size: 2em;
+}
+
+.recipe{
     font-size: 2.5em;
 }
 
 h2{
-    
     font-size: 2em;
-}
-
-.container{
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5% 5% 5% 5%;
 }
 
 .image{
@@ -61,6 +56,11 @@ h2{
     margin-right: auto;
 }
 .main{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
     height: 80%;
     min-width: 24rem;
     max-width: 42rem;
@@ -70,8 +70,11 @@ h2{
 
 .insert{
     background-color: hsl(330, 100%, 98%);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
-    padding-top: 1%;
+    padding: 0.4rem 2rem;
 }
 
 .insert h2{
@@ -79,15 +82,34 @@ h2{
     font-size: 1.5em;
 }
 
+.insert li{
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients li{
+    color: hsl(14, 45%, 36%);
+}
+
+li span{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.instruction{
+    display:inline;
+    vertical-align:top;
+}
+
 li{
     padding-left: 1.5rem;
     padding-bottom: 0.6rem;
     margin-left: -1rem;
+    padding-right: 1rem;
+    line-height: 1.5em;
 }
 
 hr{
-    color: hsl(30, 54%, 90%);
-    background-color: hsl(30, 54%, 90%);
+    border-color: hsl(30, 54%, 90%);
 }
 
 table{
@@ -97,23 +119,19 @@ table{
     border-bottom: none;
 }
 
-table, td{
+table, tr{
     border-bottom: 1px solid;
     border-collapse: collapse;
     border-color: hsl(30, 18%, 87%);
 }
 
+tr:last-child{
+   border-bottom: none;
+}
+
 @media screen and (max-width: 375px){
-
-    .container{
-        background-color: hsl(0, 0%, 100%);
-        border-radius: 0px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 0 10% 0;
-    }
-
     .main{
+        background-color: hsl(0, 0%, 100%);
         position: absolute;
         top: 0;
         left: 0;
@@ -121,7 +139,11 @@ table, td{
         height: auto;
         min-width: 20rem;
         max-width: 42rem;
+        border-radius: 0px;
+        margin-left: auto;
+        margin-right: auto;
         margin: 0;
+        padding: 0 0 10% 0;
     }
 
     .image{
@@ -129,37 +151,55 @@ table, td{
         border-radius: 0px;
     }
 
+    .recipe{
+        font-size: 2.2em;
+    }
+
     .insert{
         background-color: hsl(330, 100%, 98%);
         border-radius: 10px;
-        padding-top: 1%;
-        margin-left: 5%;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        margin-left: 2rem;
         margin-right: 5%;
+    }
+
+    .insert li{
+        padding-left: 1rem;
+        padding-bottom: 0.6rem;
+        line-height: 1.6;
     }
 
     h1{
         color: hsl(24, 5%, 18%);
-        font-size: 2.5em;
-        line-height: 1.1;
+        font-size: 1.8em;
+        line-height: 1em;
         margin-left: 5%;
-        
+        padding: 1rem 1rem 0;
     }
 
     h2{
         font-size: 2em;
-        margin-left: 5%;
     }
 
     p{
-        line-height: 1.6;
+        line-height: 1.5;
         margin-left: 5%;
-        margin-right: 5%;
+        padding: 0 1rem 0 1rem;
     }
 
-    li{
-        padding-left: 1.5rem;
+    
+    .ingredients li{
+        padding-left: 1rem;
         padding-bottom: 0.6rem;
         margin-left: 5%;
-        line-height: 1.6;
+        line-height: 1.5em;
+    }
+
+    .instructions li{
+        padding-left: 1rem;
+        padding-bottom: 0.6rem;
+        margin-left: 5%;
+        line-height: 1.5em;
     }
 }
