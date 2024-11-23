@@ -1,0 +1,165 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.stone100{
+    color: hsl(30, 10%, 34%);
+}
+
+.brown800{
+    color: hsl(14, 45%, 36%);
+}
+
+.weight-bold{
+    font-weight: bold;
+}
+
+.weight-normal{
+    font-weight: normal;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+}
+
+h1{
+    color: hsl(24, 5%, 18%);
+    font-size: 2.5em;
+}
+
+h2{
+    
+    font-size: 2em;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 5% 5% 5%;
+}
+
+.image{
+    max-width: 100%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main{
+    height: 80%;
+    min-width: 24rem;
+    max-width: 42rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.insert{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding-top: 1%;
+}
+
+.insert h2{
+    color: hsl(332, 51%, 32%);
+    font-size: 1.5em;
+}
+
+li{
+    padding-left: 1.5rem;
+    padding-bottom: 0.6rem;
+    margin-left: -1rem;
+}
+
+hr{
+    color: hsl(30, 54%, 90%);
+    background-color: hsl(30, 54%, 90%);
+}
+
+table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+}
+
+table, td{
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+    border-color: hsl(30, 18%, 87%);
+}
+
+@media screen and (max-width: 375px){
+
+    .container{
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 0 10% 0;
+    }
+
+    .main{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: fit-content;
+        height: auto;
+        min-width: 20rem;
+        max-width: 42rem;
+        margin: 0;
+    }
+
+    .image{
+        width:100%;
+        border-radius: 0px;
+    }
+
+    .insert{
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 10px;
+        padding-top: 1%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    h1{
+        color: hsl(24, 5%, 18%);
+        font-size: 2.5em;
+        line-height: 1.1;
+        margin-left: 5%;
+        
+    }
+
+    h2{
+        font-size: 2em;
+        margin-left: 5%;
+    }
+
+    p{
+        line-height: 1.6;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    li{
+        padding-left: 1.5rem;
+        padding-bottom: 0.6rem;
+        margin-left: 5%;
+        line-height: 1.6;
+    }
+}
